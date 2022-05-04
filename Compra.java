@@ -2,7 +2,11 @@ package Compra;
 
 import org.junit.*;
 
-
+/**
+ * Clase Compra
+ * @author Rodrigo de Miguel Fuente
+ * @version 0.0.1
+ */
 public class Compra {	
 	
 	public static void main(String[] args) {
@@ -10,10 +14,11 @@ public class Compra {
 	}
 	
 	/**
-	 * 
-	 * @param precio
-	 * @param oferta
-	 * @return
+	 * Metodo que calcula la oferta
+	 * @param precio Precio del producto sin oferta
+	 * @param oferta Porcentaje de la oferta
+	 * @return Precio del producto con la oferta aplicada
+	 * @throws IllegalArgumentException cuando se la cantidad de la oferta se sale de los limites establecidos
 	 */
 	public static float oferta(float precio, float oferta) {
 		if (oferta > 100) {
